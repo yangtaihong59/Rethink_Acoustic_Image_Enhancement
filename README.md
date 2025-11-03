@@ -1,0 +1,61 @@
+[简体中文](README_ZH.md) | English
+---
+
+## Project Description
+
+This project is the open-source code repository of the paper, containing the denoising method KDLAE, acoustic image quality assessment ASDQE, sample data, and environment dependencies. This document is a quick start guide and navigation.
+
+### Directory Structure
+
+- `requirements.txt`: Python dependency list in this directory.
+- `KDLAE/`: KDLAE denoising method.
+  - `KDLAE_T.ipynb`: KDLAE teacher model.
+  - `KDLAE-S.ipynb`: KDLAE student model.
+  - `KDLAE_model.py`: KDLAE model implementation.
+
+- `ASDQE/`: ASDQE acoustic reference-free image quality assessment.
+  - `ASDQE_model.py`: ASDQE model implementation.
+  - `ASDQE_test.py`: ASDQE usage script.
+
+- `Sample/`: Sample data or configuration.
+
+### Environment Setup
+
+It is recommended to use a Python virtual environment (such as venv or conda).
+
+```bash
+# 1) Navigate to the project directory
+cd Rethink_Acoustic_Image_Enhancement
+
+# 2) (Optional) Create and activate a virtual environment
+python -m venv .venv && source .venv/bin/activate
+
+# 3) Install dependencies
+pip install -r requirements.txt
+```
+
+If you encounter version compatibility issues with specific deep learning frameworks (e.g., PyTorch, CUDA, etc.), please install the appropriate precompiled packages based on your CUDA version.
+
+### Quick Start
+
+#### 1) [KDLAE](./KDLAE/README_EN.md) Denoising
+
+Run directly in Jupyter.
+  1. Open `KDLAE/KDLAE_T.ipynb` or `KDLAE/KDLAE-S.ipynb`.
+  2. In the first cell, configure the dataset path, output directory, and training/inference parameters as needed.
+  3. Run all cells sequentially to complete training or inference and visualization.
+
+#### 2) [ASDQE](./ASDQE/README_EN.md) Image Quality Assessment
+
+`ASDQE/ASDQE_test.py` provides a test entry for reference-free quality assessment.
+
+Please check the script header and function comments, and fill in or modify parameters such as input directory, file suffix, batch processing settings, etc., to evaluate objective metrics of original/denoised results.
+
+## Citation
+
+If this project is helpful for your research or product, please cite and acknowledge in your documentation or paper: TBD after paper acceptance
+
+### License and Acknowledgments
+
+Unless otherwise specified in the repository, this is provided for academic research and exchange only. Please cite the source when using. For third-party datasets and methods involved, please follow their respective license terms and citation requirements.
+
