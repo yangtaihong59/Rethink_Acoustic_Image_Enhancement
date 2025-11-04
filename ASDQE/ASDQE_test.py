@@ -122,51 +122,17 @@ if __name__ == "__main__":
 
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     print(f"Using device: {device}")
-    base_lg_dir = "../Sample/WDD/origin" 
-    denoise_dir = "../Sample/WDD/denoise/"
+    base_lg_dir = "../Sample/MDD/origin" 
+    denoise_dir = "../Sample/MDD/denoise/"
+
+    base_lg_dir = "../Sample/CAMUS/origin" 
+    denoise_dir = "../Sample/CAMUS/denoise/"
 
     denoising_methods = {
         "origin": base_lg_dir,  
-        # "speckle@0.05":  denoise_dir + "speckle@0.05",
-        # "speckle@0.1":  denoise_dir + "speckle@0.1",
-        # "speckle@0.2":  denoise_dir + "speckle@0.2",
-        # "gaussian":  denoise_dir + "gaussian",
-        # "bm3d":  denoise_dir + "bm3d",
-        # "bilateral":  denoise_dir + "bilateral",
-        # "median": denoise_dir + "median",
-        # "nlm":  denoise_dir + "nlm",
         "Teacher":  denoise_dir + "KDLAE-T",
-        # "Student@0.02":  denoise_dir + "MultiFrameDenoiserStudentLite_30000",
         "Student@0.05":  denoise_dir + "KDLAE-S_prob@0.05",
-        # "Student@0.08":  denoise_dir + "MultiFrameDenoiserStudentLite_66000",
-        # "Student@0.11":  denoise_dir + "MultiFrameDenoiserStudentLite_78000",
-        # "Student@0.15":  denoise_dir + "MultiFrameDenoiserStudentLite_90000",
-        # "Student@0.20":  denoise_dir + "MultiFrameDenoiserStudentLite_100000",
-        # "SimNFND": denoise_dir + "SimNFND2",
     }
-
-    # base_lg_dir = "/mnt/mnt/data2/YTH/Dataset/CAMUS/CAMUS_dataset/test/ch4_resize"  
-    # denoise_dir = '/mnt/mnt/data2/YTH/Dataset/CAMUS/CAMUS_dataset/denoise/'
-    # denoising_methods = {
-    #     "origin": base_lg_dir,  
-    #     "speckle@0.05": denoise_dir + "speckle@0.05",
-    #     "speckle@0.1": denoise_dir + "speckle@0.1",
-    #     "speckle@0.2": denoise_dir + "speckle@0.2",
-    #     "gaussian": denoise_dir + "gaussian",
-    #     "bm3d": denoise_dir + "bm3d",
-    #     "bilateral": denoise_dir + "bilateral",
-    #     "median": denoise_dir + "median",
-    #     "nlm": denoise_dir + "nlm",
-    #     "Teacher": denoise_dir + "RestormerSuperResolutionParam2",
-    #     "Student@0.02":  denoise_dir + "MultiFrameDenoiserStudentLite_30000",
-    #     "Student@0.05":  denoise_dir + "MultiFrameDenoiserStudentLite_50000",
-    #     "Student@0.08":  denoise_dir + "MultiFrameDenoiserStudentLite_66000",
-    #     "Student@0.11":  denoise_dir + "MultiFrameDenoiserStudentLite_78000",
-    #     "Student@0.15":  denoise_dir + "MultiFrameDenoiserStudentLite_90000",
-    #     "Student@0.20":  denoise_dir + "MultiFrameDenoiserStudentLite_100000",
-    #     "Restormer":denoise_dir + "Restormer",
-    # }
-
 
     model_path = "weights/ASDQE.pth"  
     
