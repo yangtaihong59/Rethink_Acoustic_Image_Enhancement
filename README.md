@@ -5,7 +5,8 @@
 
 This project is the open-source code repository of the paper, containing the denoising method KDLAE, acoustic image quality assessment ASDQE, sample data, and environment dependencies. This document is a quick start guide and navigation.
 
-The training dataset used is `Quantitative Simulated Forward-Looking Sonar Dataset` (`https://www.kaggle.com/datasets/taihongyang59/quantitative-simulated-forward-looking-sonar`).
+We provide the training dataset used. [Quantitative Simulated Forward-Looking Sonar Dataset](https://www.kaggle.com/datasets/taihongyang59/quantitative-simulated-forward-looking-sonar)
+
 
 #### FLS Sample Video
 
@@ -54,19 +55,10 @@ If you encounter version compatibility issues with specific deep learning framew
 
 | Weight Name | Download Link |
 |-------------|----------------|
-| KDLAE-T     | `https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/KDLAE_T.pth` |
-| KDLAE-S-FLS | `https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/KDLAE-S-FLS.pth` |
-| KDLAE-S-US  | `https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/KDLAE-S-US.pth` |
-| ASDQE       | `https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/ASDQE.pth` |
-
-#### Download pretrained weights from Releases
-
-| Weight Name | Download Link |
-|-------------|----------------|
-| KDLAE-T     | `https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/KDLAE_T.pth` |
-| KDLAE-S-FLS | `https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/KDLAE-S-FLS.pth` |
-| KDLAE-S-US  | `https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/KDLAE-S-US.pth` |
-| ASDQE       | `https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/ASDQE.pth` |
+| KDLAE-T        | [KDLAE_T.pth](https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/KDLAE_T.pth)         |
+| KDLAE-S-FLS    | [KDLAE-S-FLS.pth](https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/KDLAE-S-FLS.pth) |
+| KDLAE-S-US     | [KDLAE-S-US.pth](https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/KDLAE-S-US.pth)   |
+| ASDQE          | [ASDQE.pth](https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/ASDQE.pth)             |
 
 #### 1) [KDLAE](./KDLAE/README_EN.md) Denoising
 
