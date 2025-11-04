@@ -79,5 +79,18 @@ If this project is helpful for your research or product, please cite and acknowl
 
 ### License and Acknowledgments
 
-Unless otherwise specified in the repository, this is provided for academic research and exchange only. Please cite the source when using. For third-party datasets and methods involved, please follow their respective license terms and citation requirements.
+Copyright 2025 Taihong Yang
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
 
