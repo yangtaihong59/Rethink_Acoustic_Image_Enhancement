@@ -4,7 +4,11 @@
 
 ## 项目说明
 
-本项目是论文的开源代码库，包含去噪方法 KDLAE、声学图像质量评价 ASDQE、示例数据与环境依赖等。本文档为中文快速上手指南与导航。
+本项目是论文的预览开源代码库，包含去噪模型 KDLAE、声学图像质量评价模型 ASDQE 的可运行最小依赖的代码、示例数据等。本文档为中文快速上手指南与导航。
+
+同时本文提供了使用的训练数据集 [Quantitative Simulated Forward-Looking Sonar Dataset](https://www.kaggle.com/datasets/taihongyang59/quantitative-simulated-forward-looking-sonar)
+
+模型的训练代码及声学影像仿真工具还在整理中
 
 ### 目录结构
 
@@ -39,6 +43,14 @@ pip install -r requirements.txt
 
 ### 快速开始
 
+#### 在 release 下载权重
+| 权重名称         | 下载链接                                                                                                                |
+|----------------|----------------------------------------------------------------------------------------------------------------------|
+| KDLAE-T        | [KDLAE_T.pth](https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/KDLAE_T.pth)         |
+| KDLAE-S-FLS    | [KDLAE-S-FLS.pth](https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/KDLAE-S-FLS.pth) |
+| KDLAE-S-US     | [KDLAE-S-US.pth](https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/KDLAE-S-US.pth)   |
+| ASDQE          | [ASDQE.pth](https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/ASDQE.pth)             |
+tai
 #### 1) [KDLAE](./KDLAE/README_ZH.md) 去噪
 
 过jypyter直接运行。
