@@ -8,27 +8,13 @@
 
 同时本文提供了使用的训练数据集 [Quantitative Simulated Forward-Looking Sonar Dataset](https://www.kaggle.com/datasets/taihongyang59/quantitative-simulated-forward-looking-sonar)
 
-<details>
-<summary>Video for FLS</summary>
+#### FLS 示例视频
 
 [![Demo Video 1](https://img.youtube.com/vi/CkXvV9udJZE/0.jpg)](https://youtu.be/CkXvV9udJZE)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CkXvV9udJZE"
-frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-allowfullscreen></iframe>
-
-</details>
-
-<details>
-<summary>Video for Ultrasound</summary>
+#### Ultrasound 示例视频
 
 [![Demo Video 2](https://img.youtube.com/vi/uBQoOC9qfEc/0.jpg)](https://youtu.be/uBQoOC9qfEc)
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/uBQoOC9qfEc"
-frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-allowfullscreen></iframe>
-
-</details>
 
 模型的训练代码及声学影像仿真工具还在整理中
 
@@ -65,6 +51,14 @@ pip install -r requirements.txt
 
 ### 快速开始
 
+#### 在 release 下载权重
+| 权重名称         | 下载链接                                                                                                                |
+|----------------|----------------------------------------------------------------------------------------------------------------------|
+| KDLAE-T        | [KDLAE_T.pth](https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/KDLAE_T.pth)         |
+| KDLAE-S-FLS    | [KDLAE-S-FLS.pth](https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/KDLAE-S-FLS.pth) |
+| KDLAE-S-US     | [KDLAE-S-US.pth](https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/KDLAE-S-US.pth)   |
+| ASDQE          | [ASDQE.pth](https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/ASDQE.pth)             |
+tai
 #### 在 release 下载权重
 | 权重名称         | 下载链接                                                                                                                |
 |----------------|----------------------------------------------------------------------------------------------------------------------|

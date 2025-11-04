@@ -7,27 +7,13 @@ This project is the open-source code repository of the paper, containing the den
 
 The training dataset used is `Quantitative Simulated Forward-Looking Sonar Dataset` (`https://www.kaggle.com/datasets/taihongyang59/quantitative-simulated-forward-looking-sonar`).
 
-<details>
-<summary>Video for FLS</summary>
+#### FLS Sample Video
 
 [![Demo Video 1](https://img.youtube.com/vi/CkXvV9udJZE/0.jpg)](https://youtu.be/CkXvV9udJZE)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CkXvV9udJZE"
-frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-allowfullscreen></iframe>
-
-</details>
-
-<details>
-<summary>Video for Ultrasound</summary>
+#### Ultrasound Sample Video
 
 [![Demo Video 2](https://img.youtube.com/vi/uBQoOC9qfEc/0.jpg)](https://youtu.be/uBQoOC9qfEc)
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/uBQoOC9qfEc"
-frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-allowfullscreen></iframe>
-
-</details>
 
 The training code and acoustic image simulation tools are still being organized.
 
@@ -63,6 +49,15 @@ pip install -r requirements.txt
 If you encounter version compatibility issues with specific deep learning frameworks (e.g., PyTorch, CUDA, etc.), please install the appropriate precompiled packages based on your CUDA version.
 
 ### Quick Start
+
+#### Download pretrained weights from Releases
+
+| Weight Name | Download Link |
+|-------------|----------------|
+| KDLAE-T     | `https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/KDLAE_T.pth` |
+| KDLAE-S-FLS | `https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/KDLAE-S-FLS.pth` |
+| KDLAE-S-US  | `https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/KDLAE-S-US.pth` |
+| ASDQE       | `https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/ASDQE.pth` |
 
 #### Download pretrained weights from Releases
 
