@@ -73,6 +73,14 @@ pip install -r requirements.txt
 | KDLAE-S-US     | [KDLAE-S-US.pth](https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/KDLAE-S-US.pth)   |
 | ASDQE          | [ASDQE.pth](https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/ASDQE.pth)             |
 tai
+#### 在 release 下载权重
+| 权重名称         | 下载链接                                                                                                                |
+|----------------|----------------------------------------------------------------------------------------------------------------------|
+| KDLAE-T        | [KDLAE_T.pth](https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/KDLAE_T.pth)         |
+| KDLAE-S-FLS    | [KDLAE-S-FLS.pth](https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/KDLAE-S-FLS.pth) |
+| KDLAE-S-US     | [KDLAE-S-US.pth](https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/KDLAE-S-US.pth)   |
+| ASDQE          | [ASDQE.pth](https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/ASDQE.pth)             |
+tai
 #### 1) [KDLAE](./KDLAE/README_ZH.md) 去噪
 
 过jypyter直接运行。
