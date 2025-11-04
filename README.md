@@ -68,6 +68,15 @@ If you encounter version compatibility issues with specific deep learning framew
 | KDLAE-S-US  | `https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/KDLAE-S-US.pth` |
 | ASDQE       | `https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/ASDQE.pth` |
 
+#### Download pretrained weights from Releases
+
+| Weight Name | Download Link |
+|-------------|----------------|
+| KDLAE-T     | `https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/KDLAE_T.pth` |
+| KDLAE-S-FLS | `https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/KDLAE-S-FLS.pth` |
+| KDLAE-S-US  | `https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/KDLAE-S-US.pth` |
+| ASDQE       | `https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/ASDQE.pth` |
+
 #### 1) [KDLAE](./KDLAE/README_EN.md) Denoising
 
 Run directly in Jupyter.
