@@ -1,6 +1,6 @@
 einops
 matplotlib
-numpy==2.2.2
+numpy
 opencv_contrib_python
 opencv_python
 opencv_python_headless
