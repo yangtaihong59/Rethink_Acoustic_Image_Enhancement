@@ -1,6 +1,6 @@
 einops==0.8.1
 matplotlib==3.10.7
-numpy==2.3.4
+numpy==2.2.2
 opencv_contrib_python==4.12.0.88
 opencv_python==4.12.0.88
 opencv_python_headless==4.12.0.88
@@ -8,5 +8,5 @@ pandas==2.3.3
 Pillow==12.0.0
 scikit-image==0.25.2
 torch==2.7.0
-torchvision==0.22.0+cu128
+torchvision==0.22.0
 tqdm==4.67.1
