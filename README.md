@@ -1,4 +1,5 @@
-[简体中文](README_ZH.md) | English
+[简体中文](README_ZH.md) | English 
+
 ---
 
 ## Project Description
@@ -53,12 +54,19 @@ If you encounter version compatibility issues with specific deep learning framew
 
 #### Download pretrained weights from Releases
 
-| Weight Name | Download Link |
-|-------------|----------------|
-| KDLAE-T        | [KDLAE_T.pth](https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/KDLAE_T.pth)         |
-| KDLAE-S-FLS    | [KDLAE-S-FLS.pth](https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/KDLAE-S-FLS.pth) |
-| KDLAE-S-US     | [KDLAE-S-US.pth](https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/KDLAE-S-US.pth)   |
-| ASDQE          | [ASDQE.pth](https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/ASDQE.pth)             |
+| Weight Name    | Download Link                                                                                                                                                      | Details                                                  |
+|----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
+| KDLAE-T        | [KDLAE_T.pth](https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/KDLAE_T.pth)                                           | Teacher denoising model, supports adjustable denoising rate |
+| KDLAE-S-FLS    | [KDLAE-S-FLS.pth](https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/KDLAE-S-FLS.pth)                                   | Forward-looking sonar distillation model, supports multi-frame input |
+| KDLAE-S-US     | [KDLAE-S-US.pth](https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/KDLAE-S-US.pth)                                     | Ultrasound distillation model, supports multi-frame input     |
+| ASDQE          | [ASDQE.pth](https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/ASDQE.pth)                                               | Acoustic image denoising evaluation model                   |
+
+You can also download all weights automatically using:
+
+```bash
+# 1) Download all weights
+python utils/download_weights.py
+```
 
 #### 1) [KDLAE](./KDLAE/README_EN.md) Denoising
 
