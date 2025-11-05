@@ -1,4 +1,17 @@
-[简体中文](README_ZH.md) | English 
+<!-- <div align="center"> -->
+
+# Re-thinking Acoustic Image Enhancement
+
+### Across Underwater Sonar and Medical Ultrasound
+
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/18q6odwhEs-xJtmEZ1VuEZ1b7Rp0LcqG6?usp=sharing)
+[![GitHub stars](https://img.shields.io/github/stars/yangtaihong59/Rethink_Acoustic_Image_Enhancement.svg?style=social&label=Star)](https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement)
+[![visitors](https://visitor-badge.laobi.icu/badge?page_id=yangtaihong59.Rethink_Acoustic_Image_Enhancement)](https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement)
+
+[简体中文](README_ZH.md) | **English**
+
+<!-- </div> -->
 
 ---
 
@@ -6,7 +19,7 @@
 
 This project is the open-source code repository of the paper, containing the denoising method KDLAE, acoustic image quality assessment ASDQE, sample data, and environment dependencies. This document is a quick start guide and navigation.
 
-We provide the training dataset used. [Quantitative Simulated Forward-Looking Sonar Dataset](https://www.kaggle.com/datasets/taihongyang59/quantitative-simulated-forward-looking-sonar)
+We provide the training dataset used. [Datasets Download](https://www.kaggle.com/datasets/taihongyang59/quantitative-simulated-forward-looking-sonar)
 
 
 #### FLS Sample Video

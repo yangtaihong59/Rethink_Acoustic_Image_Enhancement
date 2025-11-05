@@ -1,4 +1,17 @@
-简体中文 | [English](README.md)
+<!-- <div align="center"> -->
+
+# 重新思考声学图像增强
+
+### 从水下声纳与医学超声成像
+
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/18q6odwhEs-xJtmEZ1VuEZ1b7Rp0LcqG6?usp=sharing)
+[![GitHub stars](https://img.shields.io/github/stars/yangtaihong59/Rethink_Acoustic_Image_Enhancement.svg?style=social&label=Star)](https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement)
+[![visitors](https://visitor-badge.laobi.icu/badge?page_id=yangtaihong59.Rethink_Acoustic_Image_Enhancement)](https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement)
+
+**简体中文** | [English](README.md)
+
+<!-- </div> -->
 
 ---
 
