@@ -45,6 +45,7 @@ python -m venv .venv && source .venv/bin/activate
 
 # 3) 安装依赖
 pip install -r requirements.txt
+
 ```
 
 如遇到特定深度学习框架（例如 PyTorch、CUDA 等）版本兼容问题，请根据本机 CUDA 版本选择合适的预编译包进行安装。
@@ -52,12 +53,19 @@ pip install -r requirements.txt
 ### 快速开始
 
 #### 在 release 下载权重
-| 权重名称         | 下载链接                                                                                                                |
-|----------------|----------------------------------------------------------------------------------------------------------------------|
-| KDLAE-T        | [KDLAE_T.pth](https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/KDLAE_T.pth)         |
-| KDLAE-S-FLS    | [KDLAE-S-FLS.pth](https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/KDLAE-S-FLS.pth) |
-| KDLAE-S-US     | [KDLAE-S-US.pth](https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/KDLAE-S-US.pth)   |
-| ASDQE          | [ASDQE.pth](https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/ASDQE.pth)             |
+| 权重名称         | 下载链接                                                                                                                | 详细信息                                              |
+|----------------|----------------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
+| KDLAE-T        | [KDLAE_T.pth](https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/KDLAE_T.pth)         | 去噪教师模型，可调整去噪率                             |
+| KDLAE-S-FLS    | [KDLAE-S-FLS.pth](https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/KDLAE-S-FLS.pth) | 前视声纳蒸馏模型，可输入连续图像帧                     |
+| KDLAE-S-US     | [KDLAE-S-US.pth](https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/KDLAE-S-US.pth)   | 超声蒸馏模型，可输入连续图像帧                         |
+| ASDQE          | [ASDQE.pth](https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/ASDQE.pth)             | 声学影像去噪评估模型                                 |
+
+你可以直接运行脚本
+
+```bash
+# 1) 下载权重
+python utils/download_weights.py
+```
 
 #### 1) [KDLAE](./KDLAE/README_ZH.md) 去噪
 
