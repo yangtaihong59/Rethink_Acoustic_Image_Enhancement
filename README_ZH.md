@@ -19,7 +19,15 @@
 
 本项目是论文的预览开源代码库，包含去噪模型 KDLAE、声学图像质量评价模型 ASDQE 的可运行最小依赖的代码、示例数据等。本文档为中文快速上手指南与导航。
 
-同时本文提供了使用的训练数据集 [Quantitative Simulated Forward-Looking Sonar Dataset](https://www.kaggle.com/datasets/taihongyang59/quantitative-simulated-forward-looking-sonar)
+同时本文提供了使用的训练数据集 
+
+<figure>
+        <img src="https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/gif/SFLS.gif" alt ="Audio Art" >
+        <figcaption>
+            Datasets Download: <a href="https://www.kaggle.com/datasets/taihongyang59/quantitative-simulated-forward-looking-sonar/data">[SFLS-Q]</a>
+        </figcaption>
+</figure>
+
 
 #### FLS 示例视频
 
