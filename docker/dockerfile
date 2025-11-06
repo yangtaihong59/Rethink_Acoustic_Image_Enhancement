@@ -1,0 +1,36 @@
+# Base image: CUDA-enabled PyTorch runtime for GPU inference/training
+FROM pytorch/pytorch:2.8.0-cuda12.8-cudnn9-runtime
+
+# Environment variables
+ENV PYTHONUNBUFFERED=1 \
+    PYTHONDONTWRITEBYTECODE=1 \
+    PIP_NO_CACHE_DIR=1 \
+    PIP_BREAK_SYSTEM_PACKAGES=1 \
+    MKL_THREADING_LAYER=GNU \
+    OMP_NUM_THREADS=1
+
+# Install OS packages required for OpenCV and general tooling
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+    git wget curl ca-certificates \
+    libgl1 libglib2.0-0 libsm6 && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
+# Arguments for repository cloning
+ARG REPO_URL=https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement
+ARG REPO_REF=main
+
+# Set working directory and clone repository
+WORKDIR /app
+RUN git clone --depth 1 --branch ${REPO_REF} ${REPO_URL} /app
+
+# Install Python dependencies
+RUN python -m pip install --upgrade pip && \
+    pip install --no-cache-dir -r requirements.txt
+
+# Download model weights
+RUN python utils/download_weights.py || true
+
+# Default command
+CMD ["bash"]

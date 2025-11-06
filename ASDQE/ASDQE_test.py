@@ -72,7 +72,7 @@ class CustomImageDataset(Dataset):
 
 
 # Load model
-def load_model(model_path):
+def load_model(model_path, device):
     """Load the trained model"""
     model = DenoiseRatePredictor().to(device)
     if os.path.exists(model_path):
@@ -84,7 +84,7 @@ def load_model(model_path):
     return model
 
 # Inference function
-def infer(model, dataloader, method_name):
+def infer(model, dataloader, method_name, device):
     """Inference on the dataset and collect results, add progress bar display"""
     predictions = []
     
@@ -150,7 +150,7 @@ if __name__ == "__main__":
 
     model_path = "weights/ASDQE.pth"  
     
-    model = load_model(model_path)
+    model = load_model(model_path, device)
     
     all_statistics = []
     method_names = list(denoising_methods.keys())
@@ -170,7 +170,7 @@ if __name__ == "__main__":
         )
         print(f"Data loading completed, {len(dataset)} image pairs")
         
-        predictions = infer(model, dataloader, method_name)
+        predictions = infer(model, dataloader, method_name, device)
         print(f"Inference completed, {len(predictions)} prediction values")
         
         stats = calculate_statistics(predictions)
