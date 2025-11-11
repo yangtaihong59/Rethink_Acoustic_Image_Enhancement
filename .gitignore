@@ -1,3 +1,4 @@
 .DS_Store
 KDLAE/weights/*
 ASDQE/weights/*
+*.pyc

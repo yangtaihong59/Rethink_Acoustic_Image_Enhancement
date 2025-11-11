@@ -37,7 +37,7 @@
 
 [![Demo Video 2](https://img.youtube.com/vi/uBQoOC9qfEc/0.jpg)](https://youtu.be/uBQoOC9qfEc)
 
-模型的训练代码及声学影像仿真工具还在整理中
+声学影像仿真工具还在整理中
 
 ### 目录结构
 
