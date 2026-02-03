@@ -71,6 +71,14 @@ If you encounter version compatibility issues with specific deep learning framew
 
 ### Quick Start
 
+### Run in Google Colab (Recommended for a quick demo)
+
+If you just want to try KDLAE/ASDQE without setting up a local environment, use the Colab notebook link at the top of this page. Colab provides a pre-configured Python runtime; you only need to:
+
+1. Open the Colab link and set **Runtime → Change runtime type → GPU** (optional, but faster).
+2. Run the cells from top to bottom. The notebook will install dependencies and download the required pretrained weights when needed.
+3. Replace the sample input path with your own data (or upload a few test images) to reproduce the denoising/assessment results.
+
 #### Download pretrained weights from Releases
 
 | Weight Name    | Download Link                                                                                                                                                      | Details                                                  |
