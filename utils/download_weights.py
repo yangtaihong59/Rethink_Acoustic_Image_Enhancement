@@ -30,6 +30,11 @@ WEIGHTS_CONFIG = [
         "dest": "KDLAE/weights/KDLAE_T.pth"
     },
     {
+        "name": "KDLAE-T-L2Dice",
+        "url": "https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/KDLAE_T_L2Dice.pth",
+        "dest": "KDLAE/weights/KDLAE_T_L2Dice.pth"
+    },
+    {
         "name": "KDLAE-S-FLS",
         "url": "https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/KDLAE-S-FLS.pth",
         "dest": "KDLAE/weights/KDLAE-S-FLS.pth"

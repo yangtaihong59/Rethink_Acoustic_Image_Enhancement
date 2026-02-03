@@ -76,7 +76,8 @@ pip install -r requirements.txt
 #### 在 release 下载权重
 | 权重名称         | 下载链接                                                                                                                | 详细信息                                              |
 |----------------|----------------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
-| KDLAE-T        | [KDLAE_T.pth](https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/KDLAE_T.pth)         | 去噪教师模型，可调整去噪率                             |
+| KDLAE-T        | [KDLAE_T.pth](https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/KDLAE_T.pth)         | 去噪教师模型$L1_{Shadow}$，可调整去噪率                             |
+| KDLAE-T-Dice        | [KDLAE_T_L2Dice.pth](https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/KDLAE_T_L2Dice.pth)         | 去噪教师模型$L2_{Dice}$，可调整去噪率                             |
 | KDLAE-S-FLS    | [KDLAE-S-FLS.pth](https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/KDLAE-S-FLS.pth) | 前视声纳蒸馏模型，可输入连续图像帧                     |
 | KDLAE-S-US     | [KDLAE-S-US.pth](https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/KDLAE-S-US.pth)   | 超声蒸馏模型，可输入连续图像帧                         |
 | ASDQE          | [ASDQE.pth](https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/ASDQE.pth)             | 声学影像去噪评估模型                                 |
