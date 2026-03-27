@@ -19,25 +19,43 @@
 
 本项目是论文的预览开源代码库，包含去噪模型 KDLAE、声学图像质量评价模型 ASDQE 的可运行最小依赖的代码、示例数据等。本文档为中文快速上手指南与导航。
 
-同时本文提供了使用的训练数据集 
+## 快速预览
 
-<figure>
-        <img src="https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/gif/SFLS.gif" alt ="Audio Art" >
-        <figcaption>
-            Datasets Download: <a href="https://www.kaggle.com/datasets/taihongyang59/quantitative-simulated-forward-looking-sonar/data">[SFLS-Q]</a>
-        </figcaption>
-</figure>
+数据集：[SFLS-Q](https://www.kaggle.com/datasets/taihongyang59/quantitative-simulated-forward-looking-sonar/data)
 
+<p align="center">
+  <img src="https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/gif/SFLS_compact.gif" width="64%" alt="SFLS 数据集压缩动态图预览" />
+</p>
 
-#### FLS 示例视频
+### 前视声纳
 
-[![Demo Video 1](https://img.youtube.com/vi/CkXvV9udJZE/0.jpg)](https://youtu.be/CkXvV9udJZE)
+YouTube 演示链接：[FLS Demo](https://youtu.be/CkXvV9udJZE)
 
-#### Ultrasound 示例视频
+<p align="center">
+  <img src="Sample/MDD/origin/0001_sort.jpg" width="22%" alt="前视声纳输入图像" />
+  <img src="Sample/MDD/denoise/KDLAE-T/0001_sort.jpg" width="22%" alt="KDLAE-T 前视声纳去噪结果" />
+  <img src="Sample/MDD/origin/0005_sort.jpg" width="22%" alt="前视声纳输入图像样例二" />
+  <img src="Sample/MDD/denoise/KDLAE-T/0005_sort.jpg" width="22%" alt="KDLAE-T 前视声纳去噪结果样例二" />
+</p>
+<p align="center">
+  <sub>从左到右依次为：样例 A 输入、样例 A KDLAE-T 输出、样例 B 输入、样例 B KDLAE-T 输出。</sub>
+</p>
 
-[![Demo Video 2](https://img.youtube.com/vi/uBQoOC9qfEc/0.jpg)](https://youtu.be/uBQoOC9qfEc)
+### 医学超声
 
-声学影像仿真工具还在整理中
+YouTube 演示链接：[Ultrasound Demo](https://youtu.be/uBQoOC9qfEc)
+
+<p align="center">
+  <img src="Sample/CAMUS/origin/0001_4__00.png" width="22%" alt="超声输入图像样例一" />
+  <img src="Sample/CAMUS/denoise/KDLAE-T/0001_4__00.png" width="22%" alt="KDLAE-T 超声去噪结果样例一" />
+  <img src="Sample/CAMUS/origin/0001_4__10.png" width="22%" alt="超声输入图像样例二" />
+  <img src="Sample/CAMUS/denoise/KDLAE-T/0001_4__10.png" width="22%" alt="KDLAE-T 超声去噪结果样例二" />
+</p>
+<p align="center">
+  <sub>从左到右依次为：样例 A 输入、样例 A KDLAE-T 输出、样例 B 输入、样例 B KDLAE-T 输出。</sub>
+</p>
+
+声学影像仿真工具，将在日后作为另一大型项目的部件一同开源，但这需要一些时间。
 
 ### 目录结构
 
@@ -53,7 +71,19 @@
 
 - `Sample/`: 示例数据或配置。
 
-### 环境准备
+
+
+### 快速开始
+
+#### 在 Google Colab 快速体验（推荐）
+
+如果你想先快速跑通 KDLAE/ASDQE，而不想在本地配置环境，可以直接点击本文档顶部的 Colab 链接。Colab 已提供可用的 Python 运行环境，一般只需要：
+
+1. 打开 Colab 后在菜单选择 **Runtime → Change runtime type → GPU**（可选，但会更快）。
+2. 从上到下依次运行所有单元格；Notebook 会按需安装依赖并下载所需的预训练权重。
+3. 将示例输入路径替换为你的数据（或上传少量测试图片），即可复现实验的去噪/评价流程。
+
+#### 环境准备
 
 建议使用 Python 虚拟环境（如 venv 或 conda）。
 
@@ -70,16 +100,6 @@ pip install -r requirements.txt
 ```
 
 如遇到特定深度学习框架（例如 PyTorch、CUDA 等）版本兼容问题，请根据本机 CUDA 版本选择合适的预编译包进行安装。
-
-### 快速开始
-
-### 在 Google Colab 快速体验（推荐）
-
-如果你想先快速跑通 KDLAE/ASDQE，而不想在本地配置环境，可以直接点击本文档顶部的 Colab 链接。Colab 已提供可用的 Python 运行环境，一般只需要：
-
-1. 打开 Colab 后在菜单选择 **Runtime → Change runtime type → GPU**（可选，但会更快）。
-2. 从上到下依次运行所有单元格；Notebook 会按需安装依赖并下载所需的预训练权重。
-3. 将示例输入路径替换为你的数据（或上传少量测试图片），即可复现实验的去噪/评价流程。
 
 #### 在 release 下载权重
 | 权重名称         | 下载链接                                                                                                                | 详细信息                                              |
@@ -99,12 +119,13 @@ python utils/download_weights.py
 
 #### 1) [KDLAE](./KDLAE/README_ZH.md) 去噪
 
-过jypyter直接运行。
-  1. 打开 `KDLAE/KDLAE_T.ipynb` 或 `KDLAE/KDLAE-S.ipynb`。
-  2. 在开头单元格中按需配置数据集路径、输出目录、训练/推理参数。
-  3. 依次运行全部单元格，完成训练或推理与可视化。
+可在 Jupyter 中直接运行。
 
-#### 2) [ASDQE](./ASDQE/README_EN.md) 图像质量评价
+1. 打开 `KDLAE/KDLAE_T.ipynb` 或 `KDLAE/KDLAE-S.ipynb`。
+2. 在开头单元格中按需配置数据集路径、输出目录、训练/推理参数。
+3. 依次运行全部单元格，完成训练或推理与可视化。
+
+#### 2) [ASDQE](./ASDQE/README_ZH.md) 图像质量评价
 
 `ASDQE/ASDQE_test.py` 提供无参考质量评价的测试入口。
 
@@ -129,6 +150,3 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
-
-
-
