@@ -132,7 +132,18 @@ Please check the script header and function comments, and fill in or modify para
 
 ## Citation
 
-If this project is helpful for your research or product, please cite and acknowledge in your documentation or paper: TBD after paper acceptance
+If this project is helpful for your research or product, please cite and acknowledge in your documentation or paper:
+
+```bibtex
+@article{yang2026re,
+  title={Re-thinking Acoustic Image Enhancement Across Underwater Sonar and Medical Ultrasound},
+  author={Yang, Taihong and Yao, Yiqing and Zhuang, Long and Li, Nuo and Zhang, Tao and Liu, Shede},
+  journal={Expert Systems with Applications},
+  pages={132159},
+  year={2026},
+  publisher={Elsevier}
+}
+```
 
 ### License and Acknowledgments
 

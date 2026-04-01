@@ -133,7 +133,18 @@ python utils/download_weights.py
 
 ## 引用
 
-若本项目对你的研究或产品有帮助，请在文档或论文中引用致谢： 论文录用后更新
+若本项目对你的研究或产品有帮助，请在文档或论文中引用致谢：
+
+```bibtex
+@article{yang2026re,
+  title={Re-thinking Acoustic Image Enhancement Across Underwater Sonar and Medical Ultrasound},
+  author={Yang, Taihong and Yao, Yiqing and Zhuang, Long and Li, Nuo and Zhang, Tao and Liu, Shede},
+  journal={Expert Systems with Applications},
+  pages={132159},
+  year={2026},
+  publisher={Elsevier}
+}
+```
 
 ### 许可与致谢
 
