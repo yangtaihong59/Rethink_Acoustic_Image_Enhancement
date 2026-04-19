@@ -108,6 +108,7 @@ If you encounter version compatibility issues with specific deep learning framew
 | KDLAE-S-FLS    | [KDLAE-S-FLS.pth](https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/KDLAE-S-FLS.pth)                                   | Forward-looking sonar distillation model, supports multi-frame input |
 | KDLAE-S-US     | [KDLAE-S-US.pth](https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/KDLAE-S-US.pth)                                     | Ultrasound distillation model, supports multi-frame input     |
 | ASDQE          | [ASDQE.pth](https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/ASDQE.pth)                                               | Acoustic image denoising evaluation model                   |
+| Pretrained Model | [gaussian_color_denoising_blind.pth](https://github.com/swz30/Restormer/releases/download/v1.0/gaussian_color_denoising_blind.pth)                               | From the open-source project [Restormer](https://github.com/swz30/Restormer) |
 
 You can directly run the script:
 
@@ -146,6 +147,8 @@ If this project is helpful for your research or product, please cite and acknowl
 ```
 
 ### License and Acknowledgments
+
+We thank the authors of [Restormer](https://github.com/swz30/Restormer) for providing the foundational pretrained model weights.
 
 Copyright 2025 Taihong Yang
 

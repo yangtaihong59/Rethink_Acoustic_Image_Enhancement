@@ -26,11 +26,15 @@ Note: Training typically requires CUDA and a matching PyTorch build—see `requi
         </figcaption>
 </figure>
 
-2. Review and edit training configs / scripts
+2. Download the teacher model pretrained weights.
+   - [gaussian_color_denoising_blind.pth](https://github.com/swz30/Restormer/releases/download/v1.0/gaussian_color_denoising_blind.pth) from [Restormer](https://github.com/swz30/Restormer)
+   - Place the weight file in the appropriate path expected by the training config.
+
+3. Review and edit training configs / scripts
     (for example `train.sh`, or `ASDQE.py`).
     Modify dataset paths inside the configuration files located at `Denoising/Options/paper202508/`.
 
-3. Run the training script (example, adjust to your config):
+4. Run the training script (example, adjust to your config):
    ```bash
    # KDLAE
    bash train.sh Denoising/Options/paper202508/KDLAES.yml 
@@ -46,6 +50,8 @@ Note: Training typically requires CUDA and a matching PyTorch build—see `requi
 
 ### Acknowledgment
 This code is based on [Restormer](https://github.com/swz30/Restormer), [BasicSR](https://github.com/xinntao/BasicSR) and [HINet](https://github.com/megvii-model/HINet).
+
+The teacher model (KDLAE-T) uses the pretrained weights [gaussian_color_denoising_blind.pth](https://github.com/swz30/Restormer/releases/download/v1.0/gaussian_color_denoising_blind.pth) from the open-source project [Restormer](https://github.com/swz30/Restormer).
 
 ---
 

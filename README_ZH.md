@@ -109,6 +109,7 @@ pip install -r requirements.txt
 | KDLAE-S-FLS    | [KDLAE-S-FLS.pth](https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/KDLAE-S-FLS.pth) | 前视声纳蒸馏模型，可输入连续图像帧                     |
 | KDLAE-S-US     | [KDLAE-S-US.pth](https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/KDLAE-S-US.pth)   | 超声蒸馏模型，可输入连续图像帧                         |
 | ASDQE          | [ASDQE.pth](https://github.com/yangtaihong59/Rethink_Acoustic_Image_Enhancement/releases/download/weight/ASDQE.pth)             | 声学影像去噪评估模型                                 |
+| 预训练模型       | [gaussian_color_denoising_blind.pth](https://github.com/swz30/Restormer/releases/download/v1.0/gaussian_color_denoising_blind.pth) | 来自开源项目 [Restormer](https://github.com/swz30/Restormer)                   |
 
 你可以直接运行脚本
 
@@ -148,16 +149,16 @@ python utils/download_weights.py
 
 ### 许可与致谢
 
+感谢 [Restormer](https://github.com/swz30/Restormer) 项目提供基础预训练模型权重。
+
 Copyright 2025 Taihong Yang
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
+根据 Apache 许可证 2.0 版（以下简称“许可证”）授权；
+除非遵守许可证规定，否则你不得使用本文件。
+你可以在以下网址获取许可证副本：
 
     http://www.apache.org/licenses/LICENSE-2.0
 
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+除非适用法律要求或经书面同意，否则依据许可证分发的软件
+均按“原样”提供，不提供任何明示或默示的担保或条件。
+请参阅许可证，了解有关权限和限制的具体规定。

@@ -26,11 +26,15 @@
         </figcaption>
 </figure>
 
-2. 查看并编辑训练配置 / 脚本
+2. 下载教师模型预训练权重。
+   - [gaussian_color_denoising_blind.pth](https://github.com/swz30/Restormer/releases/download/v1.0/gaussian_color_denoising_blind.pth)（来自 [Restormer](https://github.com/swz30/Restormer)）
+   - 将权重文件放到训练配置指定的路径下。
+
+3. 查看并编辑训练配置 / 脚本
     （例如 `train.sh`、或 `ASDQE.py` 等）。
      修改路径Denoising/Options/paper202508/中配置文件的数据集路径
 
-3. 运行训练脚本（示例，视具体配置而定）:
+4. 运行训练脚本（示例，视具体配置而定）:
    ```bash
    # KDLAE
    bash train.sh Denoising/Options/paper202508/KDLAES.yml 
@@ -45,5 +49,7 @@
 - 上层目录下的 `ASDQE/` 与 `KDLAE/`：各模型的详细说明与预训练权重（例如 `ASDQE/README_EN.md`、`KDLAE/README_EN.md`）。
 
 ### 致谢
-本代码基于[Restomer](https://github.com/swz30/Restormer), [BasicSR](https://github.com/xinntao/BasicSR) 与 [HINet](https://github.com/megvii-model/HINet)。
+本代码基于 [Restormer](https://github.com/swz30/Restormer)、[BasicSR](https://github.com/xinntao/BasicSR) 与 [HINet](https://github.com/megvii-model/HINet)。
+
+教师模型（KDLAE-T）使用开源项目 [Restormer](https://github.com/swz30/Restormer) 提供的预训练权重 [gaussian_color_denoising_blind.pth](https://github.com/swz30/Restormer/releases/download/v1.0/gaussian_color_denoising_blind.pth)。
 
